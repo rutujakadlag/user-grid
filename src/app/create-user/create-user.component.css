@@ -1,0 +1,19 @@
+#createUserForm {
+   text-align: center;
+}
+
+.form-group label {
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.form-group {
+    padding: 5px;
+    margin: 5px ;
+}
+
+#createUserForm button {
+    padding: 10px;
+    margin: 5px;
+}

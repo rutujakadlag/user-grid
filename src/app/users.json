@@ -1,0 +1,45 @@
+[
+    {
+      "firstName": "Monica", 
+      "lastName": "Geller", 
+      "emailAddress" : "monica.geller@gmail.com", 
+      "gender" : "Female", 
+      "location" : ["NewYork", "Europe"] 
+    },
+    {
+      "firstName": "Rachel", 
+      "lastName": "Green", 
+      "emailAddress" : "rachel.green@gmail.com", 
+      "gender" : "Female", 
+      "location" : ["NewYork", "Europe"] 
+    },
+    {
+      "firstName": "Chandler", 
+      "lastName": "Bing", 
+      "emailAddress" : "chandler.bing@gmail.com", 
+      "gender" : "Male", 
+      "location" : ["NewYork", "Europe"] 
+    },
+    {
+      "firstName": "Joey", 
+      "lastName": "Tribbiani", 
+      "emailAddress" : "joey.trib@gmail.com", 
+      "gender" : "Male", 
+      "location" : ["NewYork", "Europe"] 
+    },
+    {
+      "firstName": "Phoebe", 
+      "lastName": "Buffay", 
+      "emailAddress" : "phoebe.buffay@gmail.com", 
+      "gender" : "Female", 
+      "location" : ["NewYork", "Europe"] 
+    },
+    {
+      "firstName": "Ross", 
+      "lastName": "Geller", 
+      "emailAddress" : "ross.geller@gmail.com", 
+      "gender" : "Male", 
+      "location" : ["NewYork", "Europe"] 
+    }
+ ]
+ 

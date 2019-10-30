@@ -1,0 +1,16 @@
+.userTable {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.userTable th, tr {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#createUser {
+    float: right;
+    padding: 5px;
+}

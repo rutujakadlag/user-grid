@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id = "usersListView" *ngIf="showUsersList">   
+<h2>List of Users: </h2>
+<table class = "userTable">
+        <th>
+            First Name
+        </th>
+        <th>
+                Last Name
+            </th> <th>
+                    Gender
+                </th>
+                <th>
+                        Email Address
+                    </th>
+                    <th>
+                            Location
+                        </th>
+                        <th>
+                           Edit User
+                        </th>
+                        <th>
+                               Delete User
+                            </th>
+                        <tr *ngFor = "let user of usersList">
+                            <td>{{user.firstName}}</td>
+                            <td>{{user.lastName}}</td>
+                            <td>{{user.gender}}</td>
+                            <td>{{user.emailAddress}}</td>
+                            <td>{{user.location}}</td>
+                           <td>
+                              <app-edit-user [currentUser] = "user"
+                              (editUser) = "editUserFromList(user)"></app-edit-user>
+                           </td>
+                                <td> 
+                                    <app-delete-user [currentUser] = "user"
+                                    (deleteUserFromList) = "deleteUsersFromList(user)"></app-delete-user>
+                                    </td>
+                            </tr>
+
+    </table>
+    
+
+<button (click)="showFormView()" id ="createUser"> Create User </button>    
+</div>
+    
+<app-create-user *ngIf="!showUsersList"
+                 [currentUser] = "user"
+                 (newUserAdded)= "addNewUserToList(user)"
+                 (cancelButtonClicked) = "showUsersListToUser()"></app-create-user>
